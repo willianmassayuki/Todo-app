@@ -1,0 +1,34 @@
+@use './variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    position: absolute;
+    top: 100px;
+    height: 80vh;
+    width: 40vw;
+    transition-duration: .3s;
+    @media screen and (max-width: 720px) {
+        transition-duration: .3s;
+        width: 80vw;
+    }
+    
+    .sun {
+        display: none;
+    }
+}
+
+.dark {
+    background-color: variables.$sec-bg-color-dk;
+    color: variables.$text-task-dk;
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+//Primary
+
+$Bright-Blue: hsl(220, 98%, 61%);
+$Check-Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+//Light Theme
+
+$main-bg-color-lt: hsl(0, 0%, 98%);
+$sec-bg-color-lt: hsl(236, 33%, 92%);
+$task-completed-lt: hsl(233, 11%, 84%);
+$text2-lt: hsl(236, 9%, 61%);
+$text-lt: hsl(235, 19%, 35%);
+
+// Dark Theme
+
+$main-bg-color-dk: hsl(235, 21%, 11%);
+$sec-bg-color-dk: hsl(235, 24%, 19%);
+$text-task-dk: hsl(234, 39%, 85%);
+$Blue-hover-dk: hsl(236, 33%, 92%);
+$task-filter-dk: hsl(234, 11%, 52%);
+$task-completed-dk: hsl(233, 14%, 35%);
+$shadow-dk: hsl(237, 14%, 26%);
+
+$body-font-size: 18px;
+$font-stack: 'Josefin Sans', sans-serif;
+$bg-img-desktop: 'images/bg-desktop-light.jpg';
+$bg-img-mobile: 'images/bg-mobile-light.jpg';
+$mobile-size: 940px;

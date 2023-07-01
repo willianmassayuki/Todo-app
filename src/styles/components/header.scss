@@ -1,0 +1,15 @@
+@use '../variables';
+
+.header {
+    background-image: url(variables.$bg-img-mobile);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    transition-duration: .3s;
+    
+    @media screen and (min-width: 768px) {
+        transition-duration: .3s;
+        background-image: url(variables.$bg-img-desktop);
+      }
+}

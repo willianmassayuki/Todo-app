@@ -1,11 +1,19 @@
+import './styles/app.scss'
+import Header from './components/Header'
+import AppHeader from './components/AppHeader'
 
 function App() {
   
   return (
     <>
-      <div>
-        <h1>Começo do app</h1>
-      </div>       
+      <Header />
+      <div className="page-wrapper">
+        <div className='main-container'>
+          <div className="app-header">
+            <AppHeader />
+          </div>
+        </div>       
+      </div>
     </>
   )
 }

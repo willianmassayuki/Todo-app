@@ -1,0 +1,17 @@
+@use '../variables';
+@use '../mixins';
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    h1 {
+        color: variables.$main-bg-color-lt;
+    }
+}
