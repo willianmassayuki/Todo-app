@@ -1,5 +1,3 @@
-import appHeader from "./AppHeader";
-
 const ChangeTheme = () => {
   
     console.log('Funciona');
