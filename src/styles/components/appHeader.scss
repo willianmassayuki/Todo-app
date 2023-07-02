@@ -13,5 +13,10 @@
 
     h1 {
         color: variables.$main-bg-color-lt;
+        letter-spacing: 1rem;
+    }
+
+    .inactive {
+        display: none;
     }
 }

@@ -1,6 +1,7 @@
 import './styles/app.scss'
 import Header from './components/Header'
 import AppHeader from './components/AppHeader'
+import AddItem from './components/AddItem'
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
           <div className="app-header">
             <AppHeader />
           </div>
+          <AddItem />
         </div>       
       </div>
     </>

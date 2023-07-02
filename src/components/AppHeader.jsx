@@ -2,13 +2,21 @@ import { useState } from 'react';
 import '../styles/components/appHeader.scss';
 
 const AppHeader = () => {
+  
   const [dark, setDark] = useState(false);
-  const [theme, setTheme] = useState('');
+  let [theme, setTheme] = useState('');
+  const [inactive, setInactive] = useState(true);  
+  let [classIn, setClassIn] = useState(['', 'inactive']);
 
   function ChangeTheme() {
-    setDark(!dark);
-    setTheme(dark ? 'dark' : '')
-    console.log(theme)
+    setDark(dark => !dark);
+    setInactive(inactive => !inactive);
+    changeClass();
+  }
+
+  function changeClass() {
+    setTheme(theme = (dark ? 'dark' : ''));
+    setClassIn(classIn = (inactive ? ['', 'inactive'] : ['inactive', '']));
   }
 
   return (
@@ -16,8 +24,8 @@ const AppHeader = () => {
       <h1>TODO</h1>
       <input type="checkbox" id="modo" onChange={ChangeTheme} />
       <label htmlFor="modo"> 
-        <img className="moon" src="images/icon-moon.svg" alt="Moon" />
-        <img className="sun" src="images/icon-sun.svg" alt="Sun" />
+        <img className={`${classIn[0]}`} src="images/icon-moon.svg" alt="Moon" />
+        <img className={`${classIn[1]}`} src="images/icon-sun.svg" alt="Sun" />
       </label>
     </div>
 
