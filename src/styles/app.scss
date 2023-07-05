@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 60vh;
     background-color: variables.$main-bg-color-lt;
 }
 
@@ -35,9 +35,4 @@
     }
 }
 
-.dark {
-    background-color: variables.$sec-bg-color-dk;
-    color: variables.$text-task-dk;
-
-    
-}
+// dark mode

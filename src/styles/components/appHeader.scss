@@ -12,11 +12,15 @@
     }
 
     h1 {
-        color: variables.$main-bg-color-lt;
+        color: variables.$app-bg-lt;
         letter-spacing: 1rem;
     }
 
     .inactive {
         display: none;
+    }
+
+    label:hover {
+        cursor: pointer;
     }
 }

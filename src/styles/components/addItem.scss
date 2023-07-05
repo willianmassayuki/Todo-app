@@ -1,4 +1,129 @@
+@use '../variables';
+@use '../mixins';
+
 .completed {
-    
     text-decoration: line-through;
+    color: variables.$task-completed-lt;
 }
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+
+
+.input-container {
+    height: 3rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: variables.$main-bg-color-lt;
+    border-radius: 5px;
+    @include mixins.center(row, start);
+    gap: 10px;
+
+    input {
+        border: none;
+        background-color: transparent;
+    }
+
+    textarea:focus, input:focus, select:focus {
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+    } 
+
+    label {
+        font-size: 10px;
+        color: red;
+        position: absolute;
+        top: 96px;
+    }
+
+    .w-inactive {
+        display: none;
+    }
+   
+}
+
+    .container-principal {
+        box-shadow: 0 0 4px gray;
+        border-radius: 5px;
+    }
+
+    .list-container {
+        position: relative;
+        background-color: variables.$app-bg-lt;
+        border-radius: inherit;
+        height: 50vh;
+        overflow: scroll;
+        color: variables.$text-lt;
+
+        .item-container {
+            height: 3rem;
+            padding: 10px;
+            background-color: variables.$app-bg-lt;
+            @include mixins.center(row, auto);
+            gap: 10px;
+            border-bottom: 1px variables.$task-completed-lt solid;
+
+            input, label:hover {
+                cursor: pointer;
+            }
+
+            button {
+                background-color: transparent;
+                box-shadow: 0;
+                border: none;
+                margin: 0 0 0 auto;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .app-footer {
+        @include mixins.center(row, space-between);
+        position: relative;
+        height: 2.5rem;
+        padding: 10px;
+        background-color: variables.$app-bg-lt;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-size: 12px;
+        color: variables.$text2-lt;
+    
+        .active-tab {
+            color: variables.$Bright-Blue;
+        }
+
+        p {
+            display: inline;   
+        }
+
+        button {
+            background-color: transparent;
+            box-shadow: 0;
+            border: none;
+            margin: 10px;
+            color: inherit;
+            
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .central-tab {
+            @media screen and (max-width: 960px) {
+                position: absolute;
+                bottom: -70px;
+                left: 0;
+                background-color: #fff;
+                border-radius: 5px;
+                width: 100%;
+                box-shadow: 0 0 4px gray;
+                @include mixins.center(row, center)
+            }
+        }
+    }
