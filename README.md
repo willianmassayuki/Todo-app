@@ -7,6 +7,8 @@ O meu objetivo com o projeto era entender e fixar melhor os conceitos básicos d
 O desafio consistia em fazer uma aplicação web responsiva de uma lista de tarefas, podendo adicionar, marcar como completa e deletar as tarefas, além de poder filtrar entre as categorias de forma a exibir todas as tarefas, apenas as ativas ou apenas as completas. Também com a função de alternar o tema para dark mode e salvar os dados de navegação no localStorage.
 
 ### Captura de tela
+![Design preview for the Job listings with filtering coding challenge](./public/images/screenshots/desktop-lt.png)
+
 
 ## Como instalar e acessar localmente
 
