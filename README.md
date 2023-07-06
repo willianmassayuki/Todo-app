@@ -1,5 +1,8 @@
 # Todo app solution - Frontend Mentor 
 
+### Live link
+> https://todo-app-five-lime.vercel.app/
+
 ## Visão geral
 O meu objetivo com o projeto era entender e fixar melhor os conceitos básicos do React, implementar um dark mode e trabalhar com o localStorage para salvar os dados de navegação do usuário.
 
