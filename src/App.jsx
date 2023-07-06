@@ -50,8 +50,8 @@ function App() {
             <h1>TODO</h1>
             <input type="checkbox" id="modo" onChange={ChangeTheme} />
             <label htmlFor="modo"> 
-              <img className={`${classIn[0]}`} src="images/icon-moon.svg" alt="Moon" />
-              <img className={`${classIn[1]}`} src="images/icon-sun.svg" alt="Sun" />
+              <img className={`${classIn[0]}`} src="/images/icon-moon.svg" alt="Moon" />
+              <img className={`${classIn[1]}`} src="/images/icon-sun.svg" alt="Sun" />
             </label>
           </div>
           </div>

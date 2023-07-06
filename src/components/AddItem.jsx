@@ -141,7 +141,7 @@ useEffect(() => {
             <div className='item-container' key={index}>
                 <input type="checkbox" name={`${item}`} onChange={() => handleClick(item)} />
                 <label htmlFor={`${item}`} className={`${completed.includes(item) ? 'completed' : '' }`} >{item}</label>
-                <button onClick={() => deleteItem(item)}><img src="images/icon-cross.svg" alt="Delete" /></button>
+                <button onClick={() => deleteItem(item)}><img src="/images/icon-cross.svg" alt="Delete" /></button>
             </div>
             ))}
         </div>
