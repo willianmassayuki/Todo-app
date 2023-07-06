@@ -13,3 +13,13 @@
         background-image: url(variables.$bg-img-desktop);
       }
 }
+
+#dark {
+  .header {
+    background-image: url(variables.$bg-img-mobile-dk);
+    
+    @media screen and (min-width: 768px) {
+        background-image: url(variables.$bg-img-desktop-dk);
+      }
+}
+}

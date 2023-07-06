@@ -1,10 +1,35 @@
 @use './variables';
+@use './mixins';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: variables.$font-stack;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    h1 {
+        color: variables.$app-bg-lt;
+        letter-spacing: 1rem;
+    }
+
+    .inactive {
+        display: none;
+    }
+
+    label:hover {
+        cursor: pointer;
+    }
 }
 
 .page-wrapper {
@@ -20,9 +45,9 @@
     top: 100px;
     height: 80vh;
     width: 40vw;
-    transition-duration: .3s;
+    transition-duration: .1s;
     @media screen and (max-width: 720px) {
-        transition-duration: .3s;
+        transition-duration: .1s;
         width: 80vw;
     }
     
@@ -36,3 +61,8 @@
 }
 
 // dark mode
+#dark {
+    .page-wrapper {
+        background-color: variables.$main-bg-color-dk;
+    }
+}

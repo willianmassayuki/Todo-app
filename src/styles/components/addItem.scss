@@ -10,8 +10,6 @@
     width: 0;
   }
 
-
-
 .input-container {
     height: 3rem;
     padding: 10px;
@@ -119,11 +117,59 @@
                 position: absolute;
                 bottom: -70px;
                 left: 0;
-                background-color: #fff;
+                background-color: variables.$app-bg-lt;
                 border-radius: 5px;
                 width: 100%;
                 box-shadow: 0 0 4px gray;
                 @include mixins.center(row, center)
             }
         }
+    }
+
+    #dark {
+        .completed {
+            color: variables.$task-completed-dk;
+        }
+
+        .input-container {
+            background-color: variables.$sec-bg-color-dk;
+            
+            input {
+                color: variables.$text-task-dk;
+            }
+        }
+
+        .container-principal {
+            box-shadow: 0 0 4px variables.$shadow-dk;
+        }
+
+        .list-container {
+            background-color: variables.$sec-bg-color-dk;
+        }
+
+            .item-container {
+                background-color: variables.$sec-bg-color-dk;
+                border-bottom: 1px variables.$task-completed-dk solid;
+                color: variables.$text-task-dk;
+            }
+        
+    
+        .app-footer {
+            background-color: variables.$sec-bg-color-dk;
+            color: variables.$text-task-dk;
+        
+            .active-tab {
+                color: variables.$Bright-Blue;
+            }
+    
+            .central-tab {
+                @media screen and (max-width: 960px) {
+                    background-color: variables.$sec-bg-color-dk;
+                    box-shadow: 0 0 4px variables.$shadow-dk;
+                }
+            }
+        }
+
+
+
     }

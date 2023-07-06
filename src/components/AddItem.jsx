@@ -10,7 +10,7 @@ const AddItem = () => {
   const [isChecked, setIsChecked] = useState(false); 
   const [activeTab, setActiveTab] = useState(''); 
   const [warning, setWarning] = useState(true);
-
+  
     // Recebe o valor do input
     function handleInputChange(event) {
         setInputValue(event.target.value);
@@ -65,13 +65,10 @@ const AddItem = () => {
     updateLocalStorage();
   }
 
-  
-
   function showAll() {
     setItems(all);
     updateLocalStorage();
-    setActiveTab('all');
-    
+    setActiveTab('all'); 
   }
 
   function showActive() {
@@ -92,7 +89,6 @@ const AddItem = () => {
 
 useEffect(() => {
     loadDataFromStorage();
-    console.log(items);
   }, []);
 
   function loadDataFromStorage() {
@@ -123,7 +119,6 @@ useEffect(() => {
     localStorage.setItem('completed', JSON.stringify(completed));
     localStorage.setItem('all', JSON.stringify(all));
     localStorage.setItem('active', JSON.stringify(active));
-    
   }
 
   return (
